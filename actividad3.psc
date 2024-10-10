@@ -8,11 +8,10 @@ Proceso ejercicio3
 		Leer car
 	Hasta Que Longitud(car)=1
 	contador <- 0
-	Para i<-0 Hasta Longitud(cad)  Hacer
+	Para i<-0 Hasta Longitud(cad) -1 Hacer
 		Si Subcadena(cad,i,i)=car Entonces
 			contador <- contador+1
 		FinSi
 	FinPara
 	Escribir 'La cadena de texto ', cad, ' los de caracteres se repite ', contador
-	
 FinProceso
