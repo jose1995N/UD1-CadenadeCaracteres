@@ -1,14 +1,18 @@
 // 2. Realizar un programa que comprueba si una cadena leída por teclado comienza por una subcadena
 // introducida por teclado.
 Proceso ejercicio2
-	Definir cad, subcad Como Cadena
-	Escribir 'Introduce una cadena:'Sin Saltar
+	Escribir 'Introduce una cadena:'
 	Leer cad
-	Escribir 'Introduce una subcadena:'Sin Saltar
+	Escribir 'Introduce una subcadena:'
 	Leer subcad
-	Si Subcadena(cad,0,Longitud(subcad)-1)=subcad Entonces
-		Escribir 'La cadena comienza por la subcadena'
+	i<- 0
+	Mientras Subcadena(cad, i, i) = Subcadena(subcad,i, i) Y (i < Longitud(subcad)) Hacer
+		i <- i + 1
+	Fin Mientras
+	Si i < Longitud(subcad) Entonces
+		Escribir "No comienza por la subcadena"
 	SiNo
-		Escribir 'La cadena NO comienza por la subcadena'
-	FinSi
+		Escribir "si comienza por la subcadena"
+	Fin Si
+	
 FinProceso
