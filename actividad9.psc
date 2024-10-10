@@ -6,14 +6,14 @@ Proceso actividad9
 	Escribir 'Introduce una subcadena:'Sin Saltar
 	Leer subcad
 	num_subcadenas <- Longitud(cad)-Longitud(subcad)+1
-	Para nsubc<-0 Hasta num_subcadenas-1 Hacer
-		Si Subcadena(cad,nsubc,nsubc+Longitud(subcad)-1)=subcad Entonces
-			indicador <- Verdadero
+	Para i<-0 Hasta num_subcadenas-1 Hacer
+	Si Subcadena(cad,i,i+Longitud(subcad)-1)=subcad Entonces
+		indicador <- Verdadero
 		FinSi
 	FinPara
 	Si indicador Entonces
-		Escribir 'La cadena contiene la subcadena.'
+	Escribir 'La cadena contiene la subcadena.'
 	SiNo
-		Escribir 'La cadena no contiene la subcadena.'
+	Escribir 'La cadena no contiene la subcadena.'
 	FinSi
 FinProceso
